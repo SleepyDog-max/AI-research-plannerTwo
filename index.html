@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Politeness in Practice – AI Dialogue Planner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<meta charset="utf-8"/>
+<title>Politeness in Practice – AI Dialogue Planner</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
     body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 2rem; }
     h1 { text-align: center; color: #3f51b5; }
     section { background: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
@@ -15,101 +16,107 @@
   </style>
 </head>
 <body>
-  <h1>🌐 Politeness in Practice: AI Dialogue Planner</h1>
-  <p style="text-align:center;">Create and analyze AI-generated conversations through politeness theory</p>
+<h1>🌐 Politeness in Practice: AI Dialogue Planner</h1>
+<section style="max-width: 800px; margin: 2rem auto; background: #ffffff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+<h2>🎯 Aims</h2>
+<ul>
+<li>To examine whether AI-generated dialogues demonstrate key politeness strategies as defined in linguistic theory.</li>
+<li>To assess the appropriateness, consistency, and nuance of politeness use in AI-generated conversations.</li>
+<li>To reflect on the implications of AI’s pragmatic competence for teaching, communication, and applied linguistics.</li>
+</ul>
+</section>
+<p style="text-align:center;">Create and analyze AI-generated conversations through politeness theory</p>
+<section id="step1">
+<h2>Step 1: Background Reading and Planning</h2>
+<p>📘 Start by reviewing key politeness theories:</p>
+<ul>
+<li><strong>Brown &amp; Levinson (1987):</strong> Positive and negative politeness, face-threatening acts, and strategies.</li>
+<li><strong>Leech (1983):</strong> Politeness maxims such as tact, modesty, and agreement.</li>
+<li><strong>Spencer-Oatey (2008):</strong> Rapport management and intercultural considerations.</li>
+</ul>
+<p>Then, choose 2–3 real-life scenarios where politeness plays a crucial role. Describe the participants, relationship, and goal of each interaction.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>A student requesting an extension from a professor</li>
+<li>An employee giving feedback to their manager</li>
+<li>Refusing an invitation from a friend without offending them</li>
+</ul>
+<textarea placeholder="Describe the theories and your selected scenarios here..."></textarea>
+<div class="nav-buttons">
+<button onclick="clearStep(1)">🧹 Clear</button><button onclick="openAI()">🔍 Ask AI for Examples</button>
+<button onclick="nextStep(1)">Next</button>
+</div>
 
-  <section id="step1">
-    <button onclick="clearStep(1)" style="background: #aaa;">🧹 Clear</button>
-    <h2>Step 1: Background Reading and Planning</h2>
-    <p>📘 Start by reviewing key politeness theories:</p>
-    <ul>
-      <li><strong>Brown & Levinson (1987):</strong> Positive and negative politeness, face-threatening acts, and strategies.</li>
-      <li><strong>Leech (1983):</strong> Politeness maxims such as tact, modesty, and agreement.</li>
-      <li><strong>Spencer-Oatey (2008):</strong> Rapport management and intercultural considerations.</li>
-    </ul>
-    <p>Then, choose 2–3 real-life scenarios where politeness plays a crucial role. Describe the participants, relationship, and goal of each interaction.</p>
-    <p><strong>Examples:</strong></p>
-    <ul>
-      <li>A student requesting an extension from a professor</li>
-      <li>An employee giving feedback to their manager</li>
-      <li>Refusing an invitation from a friend without offending them</li>
-    </ul>
-    <textarea placeholder="Describe the theories and your selected scenarios here..."></textarea>
-    <div class="nav-buttons">
-      <button onclick="openAI()">🔍 Ask AI for Examples</button>
-      <button onclick="nextStep(1)">Next</button>
-    </div>
-  </section>
 
-  <section id="step2" class="hidden">
-    <h2>Step 2: AI Prompting and Dialogue Generation</h2>
-    <p>💬 Use ChatGPT or a similar AI tool to generate conversations based on your scenarios. For each, create:</p>
-    <ul>
-      <li>One version using a neutral prompt</li>
-      <li>One version asking the AI to be “extra polite”</li>
-      <li>One version asking for a more “direct” or “less polite” style</li>
-    </ul>
-    <p><strong>Prompt Example:</strong> “Write a conversation where an employee gives polite negative feedback to their manager.”</p>
-    <textarea placeholder="Write your prompts and note down responses here..."></textarea>
-    <div class="nav-buttons">
-      <button onclick="prevStep(2)">Back</button>
-      <button onclick="openAI()">🔍 Ask AI to Generate Dialogues</button>
-      <button onclick="nextStep(2)">Next</button>
-    </div>
-  </section>
 
-  <section id="step3" class="hidden">
-    <h2>Step 3: Theoretical Mapping and Annotation</h2>
-    <p>🧠 Analyze the AI-generated dialogues by identifying politeness strategies used in each line or turn.</p>
-    <p><strong>Annotate:</strong> Label phrases as “positive politeness”, “negative politeness”, “bald on record”, or “off-record”.</p>
-    <p><strong>Examples:</strong></p>
-    <ul>
-      <li>“I really appreciate your time...” → Positive politeness (showing approval)</li>
-      <li>“Sorry to bother you, but...” → Negative politeness (apology + mitigation)</li>
-    </ul>
-    <textarea placeholder="Annotate your dialogues and connect to theory here..."></textarea>
-    <div class="nav-buttons">
-      <button onclick="prevStep(3)">Back</button>
-      <button onclick="openAI()">🔍 Ask AI to Label Politeness Strategies</button>
-      <button onclick="nextStep(3)">Next</button>
-    </div>
-  </section>
 
-  <section id="step4" class="hidden">
-    <h2>Step 4: Analysis and Evaluation</h2>
-    <p>📊 Evaluate the quality of the AI’s output. Use these criteria:</p>
-    <ul>
-      <li><strong>Strategy use:</strong> Did the AI apply politeness correctly?</li>
-      <li><strong>Contextual fit:</strong> Was the level of politeness appropriate for the scenario?</li>
-      <li><strong>Nuance:</strong> Did the dialogue reflect subtle language choices or just basic templates?</li>
-      <li><strong>Consistency:</strong> Were politeness markers used throughout or just at the beginning?</li>
-    </ul>
-    <textarea placeholder="Write your evaluation notes here..."></textarea>
-    <div class="nav-buttons">
-      <button onclick="prevStep(4)">Back</button>
-      <button onclick="openAI()">🔍 Ask AI to Evaluate Its Own Response</button>
-      <button onclick="nextStep(4)">Next</button>
-    </div>
-  </section>
 
-  <section id="step5" class="hidden">
-    <h2>Step 5: Write-Up and Reflection</h2>
-    <p>📝 Write a report (1,500–2,000 words) including:</p>
-    <ul>
-      <li><strong>Introduction:</strong> Topic overview and aims</li>
-      <li><strong>Methodology:</strong> Scenarios, prompts, and theories used</li>
-      <li><strong>Data and Analysis:</strong> Annotated dialogue excerpts</li>
-      <li><strong>Findings:</strong> What trends or issues did you observe?</li>
-      <li><strong>Reflection:</strong> How competent is AI at pragmatic tasks like politeness?</li>
-    </ul>
-    <textarea placeholder="Draft your report outline or reflection here..."></textarea>
-    <div class="nav-buttons">
-      <button onclick="prevStep(5)">Back</button>
-      <button onclick="openAI()">🔍 Ask AI to Help Write Sections</button>
-    </div>
-  </section>
-
-  <script>
+</section>
+<section class="hidden" id="step2">
+<h2>Step 2: AI Prompting and Dialogue Generation</h2>
+<p>💬 Use ChatGPT or a similar AI tool to generate conversations based on your scenarios. For each, create:</p>
+<ul>
+<li>One version using a neutral prompt</li>
+<li>One version asking the AI to be “extra polite”</li>
+<li>One version asking for a more “direct” or “less polite” style</li>
+</ul>
+<p><strong>Prompt Example:</strong> “Write a conversation where an employee gives polite negative feedback to their manager.”</p>
+<textarea placeholder="Write your prompts and note down responses here..."></textarea>
+<div class="nav-buttons">
+<button onclick="clearStep(2)">🧹 Clear</button><button onclick="prevStep(2)">Back</button>
+<button onclick="openAI()">🔍 Ask AI to Generate Dialogues</button>
+<button onclick="nextStep(2)">Next</button>
+</div>
+</section>
+<section class="hidden" id="step3">
+<h2>Step 3: Theoretical Mapping and Annotation</h2>
+<p>🧠 Analyze the AI-generated dialogues by identifying politeness strategies used in each line or turn.</p>
+<p><strong>Annotate:</strong> Label phrases as “positive politeness”, “negative politeness”, “bald on record”, or “off-record”.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>“I really appreciate your time...” → Positive politeness (showing approval)</li>
+<li>“Sorry to bother you, but...” → Negative politeness (apology + mitigation)</li>
+</ul>
+<textarea placeholder="Annotate your dialogues and connect to theory here..."></textarea>
+<div class="nav-buttons">
+<button onclick="clearStep(3)">🧹 Clear</button><button onclick="prevStep(3)">Back</button>
+<button onclick="openAI()">🔍 Ask AI to Label Politeness Strategies</button>
+<button onclick="nextStep(3)">Next</button>
+</div>
+</section>
+<section class="hidden" id="step4">
+<h2>Step 4: Analysis and Evaluation</h2>
+<p>📊 Evaluate the quality of the AI’s output. Use these criteria:</p>
+<ul>
+<li><strong>Strategy use:</strong> Did the AI apply politeness correctly?</li>
+<li><strong>Contextual fit:</strong> Was the level of politeness appropriate for the scenario?</li>
+<li><strong>Nuance:</strong> Did the dialogue reflect subtle language choices or just basic templates?</li>
+<li><strong>Consistency:</strong> Were politeness markers used throughout or just at the beginning?</li>
+</ul>
+<textarea placeholder="Write your evaluation notes here..."></textarea>
+<div class="nav-buttons">
+<button onclick="clearStep(4)">🧹 Clear</button><button onclick="prevStep(4)">Back</button>
+<button onclick="openAI()">🔍 Ask AI to Evaluate Its Own Response</button>
+<button onclick="nextStep(4)">Next</button>
+</div>
+</section>
+<section class="hidden" id="step5">
+<h2>Step 5: Write-Up and Reflection</h2>
+<p>📝 Write a report (1,500–2,000 words) including:</p>
+<ul>
+<li><strong>Introduction:</strong> Topic overview and aims</li>
+<li><strong>Methodology:</strong> Scenarios, prompts, and theories used</li>
+<li><strong>Data and Analysis:</strong> Annotated dialogue excerpts</li>
+<li><strong>Findings:</strong> What trends or issues did you observe?</li>
+<li><strong>Reflection:</strong> How competent is AI at pragmatic tasks like politeness?</li>
+</ul>
+<textarea placeholder="Draft your report outline or reflection here..."></textarea>
+<div class="nav-buttons">
+<button onclick="clearStep(5)">🧹 Clear</button><button onclick="prevStep(5)">Back</button>
+<button onclick="openAI()">🔍 Ask AI to Help Write Sections</button>
+</div>
+</section>
+<script>
     function nextStep(current) {
       document.getElementById('step' + current).classList.add('hidden');
       document.getElementById('step' + (current + 1)).classList.remove('hidden');
@@ -122,14 +129,14 @@
       window.open("https://www.perplexity.ai", "_blank");
     }
   </script>
-
-<section id="summary" class="hidden">
-  <h2>📋 Summary of Your Research Planner</h2>
-  <p>This is a summary of your inputs for each step. You can copy it into a document for your report or submission.</p>
-  <pre id="summaryContent" style="background: #eee; padding: 1rem; white-space: pre-wrap;"></pre>
-  <button onclick="location.reload()">🔄 Start Over</button>
+</body>
+</html>
+<section class="hidden" id="summary">
+<h2>📋 Summary of Your Research Planner</h2>
+<p>This is a summary of your inputs for each step. You can copy it into a document for your report or submission.</p>
+<pre id="summaryContent" style="background: #eee; padding: 1rem; white-space: pre-wrap;"></pre>
+<button onclick="location.reload()">🔄 Start Over</button>
 </section>
-
 <script>
   function clearStep(step) {
     const textareas = document.querySelectorAll('#step' + step + ' textarea');
@@ -147,16 +154,13 @@
     document.getElementById('summaryContent').textContent = summary;
   }
 
-  // Add summary button on page load
-  window.onload = function() {
-    const summaryBtn = document.createElement('button');
-    summaryBtn.textContent = '📋 View Summary';
-    summaryBtn.onclick = showSummary;
-    summaryBtn.style.background = '#4caf50';
-    summaryBtn.style.marginLeft = '10px';
-    document.querySelector('#step5 .nav-buttons').appendChild(summaryBtn);
-  };
+  // Add final summary button to step 5
+  const finalButtons = document.querySelector('#step5 .nav-buttons');
+  const summaryBtn = document.createElement('button');
+  summaryBtn.textContent = '📋 View Summary';
+  summaryBtn.onclick = showSummary;
+  summaryBtn.style.background = '#4caf50';
+  finalButtons.appendChild(summaryBtn);
 </script>
-</body>
-</html>
+
 
